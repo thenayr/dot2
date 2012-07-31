@@ -2,7 +2,7 @@ if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
 fi
 export GRAILS_HOME=/usr/share/java/grails
-export PATH=/usr/local/bin:/usr/local/sbin:${AWS_AUTO_SCALING_HOME}/bin:${AWS_CLOUDWATCH_HOME}/bin:$GRAILS_HOME/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/nginx/sbin:/usr/local/sbin:${AWS_AUTO_SCALING_HOME}/bin:${AWS_CLOUDWATCH_HOME}/bin:$GRAILS_HOME/bin:$PATH
 export EDITOR=VIM:$EDITOR
 #export PATH=$PATH:~/bin
 alias l='ls'

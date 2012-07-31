@@ -3,7 +3,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 
  	
-set background=dark
+set background=light
 colorscheme solarized
 set encoding=utf-8
 syntax enable
@@ -26,6 +26,7 @@ set smartcase           " Do smart case matching
 set incsearch           " Incremental search
 set hidden              " Hide buffers when they are abandoned
 set ignorecase
+set cursorline
 au BufNewFile,BufReadPost *.html setl shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.haml setl shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
@@ -51,7 +52,7 @@ set laststatus=2 " Always show the statusline"
 
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
-let g:solarized_contrast="high"
+let g:solarized_contrast="normal"
 let g:solarized_visibility="high"
 
 " Bubble single lines  	

@@ -1,4 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/rvanniekirk/design-development/zest-finance/stylesheets'
 let g:netrw_dirhist_2='/Users/rvanniekirk/Dotfiles/.git'
+let g:netrw_dirhist_3='/Users/rvanniekirk/design-development/setistars/config/deploy'
+let g:netrw_dirhist_4='/usr/local/nginx/conf'
+let g:netrw_dirhist_5='/usr/local/nginx'
+let g:netrw_dirhist_6='/usr/local/nginx/sites-enabled'
+let g:netrw_dirhist_7='/usr/local/nginx/sites-available'
