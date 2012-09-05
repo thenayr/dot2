@@ -2,7 +2,7 @@ if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
 fi
 export GRAILS_HOME=/usr/share/java/grails
-export PATH=/usr/local/bin:/usr/local/nginx/sbin:/usr/local/sbin:${AWS_AUTO_SCALING_HOME}/bin:${AWS_CLOUDWATCH_HOME}/bin:$GRAILS_HOME/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/nginx/sbin:/usr/local/sbin:${AWS_AUTO_SCALING_HOME}/bin:${AWS_CLOUDWATCH_HOME}/bin:$GRAILS_HOME/bin:$PATH:/usr/local/ec2-tools
 export EDITOR=VIM:$EDITOR
 #export PATH=$PATH:~/bin
 alias l='ls'
@@ -111,7 +111,6 @@ bash_prompt() {
 PROMPT_COMMAND=bash_prompt_command
 bash_prompt
 unset bash_prompt
-[[ -s "/Users/rvanniekirk/.rvm/scripts/rvm" ]] && . "/Users/rvanniekirk/.rvm/scripts/rvm" # Load RVM function
 
 #export CLICOLOR=1
 #export LSCOLORS=GxFxCxDxBxegedabagaced
