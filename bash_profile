@@ -4,6 +4,7 @@ fi
 export GRAILS_HOME=/usr/share/java/grails
 export PATH=/usr/local/bin:/usr/local/nginx/sbin:/usr/local/sbin:${AWS_AUTO_SCALING_HOME}/bin:${AWS_CLOUDWATCH_HOME}/bin:$GRAILS_HOME/bin:$PATH:/usr/local/ec2-tools
 export EDITOR=VIM:$EDITOR
+export TERM='xterm-256color'
 #export PATH=$PATH:~/bin
 alias l='ls'
 alias ll='ls -lAh'
@@ -34,6 +35,7 @@ alias cookup='knife cookbook upload'
 alias ec2up="knife ec2 server create -I ami-7fb0e93a -f c1.medium --ssh-user ubuntu -r 'role[bootstrap]' --template-file bootstrap/rvm.erb -N"
 alias ec2list="knife ec2 server list"
 alias ec2down="knife ec2 server delete"
+alias hosts="sudo vim /etc/hosts"
 alias tmux="TERM=screen-256color-bce tmux"
 alias tnew="tmux new -s"
 alias tlist="tmux ls"
@@ -118,5 +120,5 @@ unset bash_prompt
 
 #Mamp stuff here
 #export PATH=/Applications/MAMP/bin/php/php5.3.6/bin:/Applications/MAMP/Library/bin:$PATH
-
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 test -r /sw/bin/init.sh && . /sw/bin/init.sh

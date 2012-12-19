@@ -2,8 +2,7 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 
- 	
-set background=light
+set background=dark
 colorscheme solarized
 set encoding=utf-8
 syntax enable
@@ -26,7 +25,7 @@ set smartcase           " Do smart case matching
 set incsearch           " Incremental search
 set hidden              " Hide buffers when they are abandoned
 set ignorecase
-set cursorline
+"set cursorline
 au BufNewFile,BufReadPost *.html setl shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.haml setl shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
